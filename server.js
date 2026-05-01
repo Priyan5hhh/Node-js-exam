@@ -8,7 +8,7 @@ const backup = [];
 const server = http.createServer('/', (req, res) => {
     if(req.url === '/updateUser' && req.method === 'GET'){
         console.log(time)
-        data[i++] = "User " + i;
+        data[i++] = i;
     } else if(req.url === '/saveLog' && req.method === 'GET'){
         console.log(data);
     } else if(req.url === '/backup' && req.method === 'POST'){
